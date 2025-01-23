@@ -65,7 +65,7 @@ app.post('/send-email', (req, res) => {
       from: process.env.EMAIL_USER, // Your email (from)
       to: recipients,               // Multiple recipient emails (comma separated or array)
       subject: subject,             // Email subject
-      text: `Hi Sir,\n\nPlease take a look on pdf format.\n\n${message}`,                // Email content
+      text: `Dear Sir,\n\nRequest you to Kindly provide the price of the items list given below url.\n\n${message}`,                // Email content
     };
   
     // Send email using the transporter
